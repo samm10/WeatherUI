@@ -12,7 +12,7 @@ export class AirQualityComponent {
 
   constructor(private weatherService: WeatherService) { }
 
-  // Method to fetch the air quality
+  
   getAirQuality() {
     if (this.city) {
       this.weatherService.getAirQuality(this.city).subscribe(

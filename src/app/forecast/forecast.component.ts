@@ -12,7 +12,7 @@ export class ForecastComponent {
 
   constructor(private weatherService: WeatherService) { }
 
-  // Method to fetch the weather forecast
+  
   getForecast() {
     if (this.city) {
       this.weatherService.getForecast(this.city).subscribe(

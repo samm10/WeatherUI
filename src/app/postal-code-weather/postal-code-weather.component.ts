@@ -12,7 +12,7 @@ export class PostalCodeWeatherComponent {
 
   constructor(private weatherService: WeatherService) { }
 
-  // Method to fetch the current weather by postal code
+  
   getWeatherByPostalCode() {
     if (this.pincode) {
       this.weatherService.getCurrentWeatherByZip(this.pincode).subscribe(
